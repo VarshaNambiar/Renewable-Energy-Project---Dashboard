@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 # Load data from the Excel file
-df = pd.read_excel('renewable_projects.xlsx')
+df = pd.read_excel('https://raw.githubusercontent.com/VarshaNambiar/Renewable-Energy-Project---Dashboard/main/renewable_projects.xlsm')
 
 # Replace hyphens with NaN in the 'End Date' column
 df['End Date'] = df['End Date'].replace('-', pd.NaT)
